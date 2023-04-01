@@ -32,7 +32,7 @@ coroutine.wrap(function()
           return
     end
         wait(1.5)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/reboundv2.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/Rebound"))()
 if reb == false then
 wait(3)
 reb = true

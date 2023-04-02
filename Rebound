@@ -34,7 +34,7 @@ cue1:Play()
 local cue2 = Instance.new("Sound")
 cue2.Parent = game.Workspace
 cue2.Name = "Spawn"
-cue2.SoundId = "rbxassetid://9114221327"
+cue2.SoundId = "rbxassetid://12983476687"
 cue2.Volume = 3
 cue2:Play()
 local CameraShaker = require(game.ReplicatedStorage.CameraShaker)

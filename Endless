@@ -1,0 +1,35 @@
+--Credits to NovaNextruis, Muhammadgames, SquidR
+--Screech, Jessica, TheEndIsNear, C87FM, Vynixu
+--Creator of Endless Doors: Zavaled
+--Your game might crash when you get an achievement
+--seekeye.lua could lag your game, remove seekeye.lua to not lag during seek chase
+--Victrola has a copyrighted song, remove VictrolaRecreation.txt to avoid copyright claims
+--Thanks To Noah For Fixing Rebound Effect / Sound doesnt work Because we Dont have Access full permission To put the moving sound
+
+if game:GetService("ReplicatedStorage"):FindFirstChild("Endless") then
+
+    firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'You already executed this mod, Returning',true,1)
+
+    return false
+
+end
+
+local Test = Instance.new("Part")
+
+Test.Name = "Endless"
+
+Test.Parent = game:GetService("ReplicatedStorage")
+
+Test = 1
+game.SoundService.AmbientReverb = "City"
+game.Lighting.Ambience_Seek2.Enabled = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Endless-Doors-In-Doors/main/Sprinting.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/FlashLightV3Item"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/Endless%20(singleplayer)"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/EndlessMulti"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/Endless%20Seek%20eyes"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/seekmodel.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/VictorlaRecreationLol.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/MusicReplace"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/FuckOffBLINK.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/GudingLight"))()

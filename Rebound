@@ -34,7 +34,7 @@ cue1:Play()
 local cue2 = Instance.new("Sound")
 cue2.Parent = game.Workspace
 cue2.Name = "Spawn"
-cue2.SoundId = "rbxassetid://12983476687"
+cue2.SoundId = "https://github.com/ThatNoah/Idk/blob/main/ReboundMoving.mp3?raw=true"
 cue2.Volume = 3
 cue2:Play()
 local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
@@ -44,7 +44,7 @@ local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(sha
 end)
 camShake:Start()
 camShake:ShakeOnce(10,3,0.1,6,2,0.5)
-local speed = math.random(350,1050)
+local speed = math.random(150,1050)
 local delay = {"2", "2.5", "1.5", "1", "2.1"}
 local fuck = delay[math.random(1, #delay)]
 wait(2.8)
@@ -66,7 +66,7 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/check
 local entity = Creator.createEntity({
     CustomName = "Rebound", -- Custom name of your entity
     Model = "rbxassetid://12832732579", -- Can be GitHub file or rbxassetid
-    Speed = 130, -- Percentage, 100 = default Rush speed
+    Speed = 150, -- Percentage, 100 = default Rush speed
     DelayTime = fuck, -- Time before starting cycles (seconds)
     HeightOffset = 0.3,
     CanKill = true,
@@ -122,6 +122,8 @@ end
 
 entity.Debug.OnEntitySpawned = function(entityModel)
     print("Entity has spawned:", entityModel)
+    wait(15)
+    workspace.Rebound:Destroy()
 end
 
 entity.Debug.OnEntityDespawned = function(entityModel)
@@ -139,9 +141,9 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/check
 -- Create entity
 
 local entity = Creator.createEntity({
-    CustomName = "Rebound", -- Custom name of your entity
+    CustomName = "Rebound2", -- Custom name of your entity
     Model = "rbxassetid://12832732579", -- Can be GitHub file or rbxassetid
-    Speed = 130, -- Percentage, 100 = default Rush speed
+    Speed = 150, -- Percentage, 100 = default Rush speed
     DelayTime = fuck, -- Time before starting cycles (seconds)
     HeightOffset = 0.3,
     CanKill = true,
@@ -197,6 +199,8 @@ end
 
 entity.Debug.OnEntitySpawned = function(entityModel)
     print("Entity has spawned:", entityModel)
+    wait(15)
+    workspace.Rebound2:Destroy()
 end
 
 entity.Debug.OnEntityDespawned = function(entityModel)
@@ -214,9 +218,9 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/check
 -- Create entity
 
 local entity = Creator.createEntity({
-    CustomName = "Rebound", -- Custom name of your entity
+    CustomName = "Rebound3", -- Custom name of your entity
     Model = "rbxassetid://12832732579", -- Can be GitHub file or rbxassetid
-    Speed = 130, -- Percentage, 100 = default Rush speed
+    Speed = 150, -- Percentage, 100 = default Rush speed
     DelayTime = fuck, -- Time before starting cycles (seconds)
     HeightOffset = 0.3,
     CanKill = true,
@@ -272,6 +276,8 @@ end
 
 entity.Debug.OnEntitySpawned = function(entityModel)
     print("Entity has spawned:", entityModel)
+    wait(15)
+    workspace.Rebound3:Destroy()
 end
 
 entity.Debug.OnEntityDespawned = function(entityModel)
@@ -289,9 +295,9 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/check
 -- Create entity
 
 local entity = Creator.createEntity({
-    CustomName = "Rebound", -- Custom name of your entity
+    CustomName = "Rebound4", -- Custom name of your entity
     Model = "rbxassetid://12832732579", -- Can be GitHub file or rbxassetid
-    Speed = 130, -- Percentage, 100 = default Rush speed
+    Speed = 150, -- Percentage, 100 = default Rush speed
     DelayTime = fuck, -- Time before starting cycles (seconds)
     HeightOffset = 0.3,
     CanKill = true,
@@ -347,6 +353,8 @@ end
 
 entity.Debug.OnEntitySpawned = function(entityModel)
     print("Entity has spawned:", entityModel)
+    wait(15)
+    workspace.Rebound:Destroy()
 end
 
 entity.Debug.OnEntityDespawned = function(entityModel)
@@ -364,9 +372,9 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/check
 -- Create entity
 
 local entity = Creator.createEntity({
-    CustomName = "Rebound", -- Custom name of your entity
+    CustomName = "Rebound5", -- Custom name of your entity
     Model = "rbxassetid://12832732579", -- Can be GitHub file or rbxassetid
-    Speed = 130, -- Percentage, 100 = default Rush speed
+    Speed = 150, -- Percentage, 100 = default Rush speed
     DelayTime = fuck, -- Time before starting cycles (seconds)
     HeightOffset = 0.3,
     CanKill = true,
@@ -422,6 +430,8 @@ end
 
 entity.Debug.OnEntitySpawned = function(entityModel)
     print("Entity has spawned:", entityModel)
+    wait(15)
+    workspace.Rebound5:Destroy()
 end
 
 entity.Debug.OnEntityDespawned = function(entityModel)

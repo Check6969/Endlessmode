@@ -258,7 +258,7 @@ a.Dialogue.TextTransparency = 1
 a.Dialogue.Glow.Visible = true
 a.Dialogue.Glow.ImageColor3 = Color3.fromRGB(30, 170, 144)
 a.Dialogue.Glow.ImageTransparency = 1
-a.Dialogue.Text = "Credits to NovaNextruis, zavaled"
+a.Dialogue.Text = "Endless Mode Activated"
 a.Dialogue.TextSize = 100
 a.Dialogue.Glow.Size = UDim2.new(2, 0, 2, 0)
 game.TweenService:Create(a.Dialogue,TweenInfo.new(0.7),{TextTransparency = 0}):Play()
@@ -269,14 +269,14 @@ game.TweenService:Create(a.Dialogue.Glow,TweenInfo.new(0.7),{ImageTransparency =
 wait(0.5)
 game.TweenService:Create(a.Dialogue,TweenInfo.new(0.7),{TextTransparency = 0}):Play()
 game.TweenService:Create(a.Dialogue.Glow,TweenInfo.new(0.7),{ImageTransparency = 0}):Play()
-a.Dialogue.Text = "Nautic, ICherryKardess"
+a.Dialogue.Text = "we may or may not added Greed"
 wait(1.5)
 game.TweenService:Create(a.Dialogue,TweenInfo.new(0.7),{TextTransparency = 1}):Play()
 game.TweenService:Create(a.Dialogue.Glow,TweenInfo.new(0.7),{ImageTransparency = 1}):Play()
 wait(0.5)
 game.TweenService:Create(a.Dialogue,TweenInfo.new(0.7),{TextTransparency = 0}):Play()
 game.TweenService:Create(a.Dialogue.Glow,TweenInfo.new(0.7),{ImageTransparency = 0}):Play()
-a.Dialogue.Text = "Nexus, and C87FM"
+a.Dialogue.Text = "Well Enjoy the game"
 wait(1.5)
 game.TweenService:Create(a.Dialogue,TweenInfo.new(0.7),{TextTransparency = 1}):Play()
 game.TweenService:Create(a.Dialogue.Glow,TweenInfo.new(0.7),{ImageTransparency = 1}):Play()

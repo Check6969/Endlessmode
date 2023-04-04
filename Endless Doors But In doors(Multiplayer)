@@ -1,0 +1,257 @@
+function GitPNG(GithubImg,ImageName)
+	local url=GithubImg
+	if not isfile(ImageName..".png") then
+		writefile(ImageName..".png", game:HttpGet(url))
+	end
+	return (getcustomasset or getsynasset)(ImageName..".png")
+end
+
+local reb = false
+local seer = false
+local mat = false
+local phil = false
+local blink = false
+local clam = false
+
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'You Executed the Script',true,2)
+wait(1)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Credits to zavaled for Making Endless',true,1)
+wait(1)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Thanks To Noah For fixing Rebound + Added Effect',true,1)
+-- Custom Door Sounds
+loadstring(game:HttpGet("https://pastebin.com/raw/iAhTGdBh"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/6brG9uma"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/PhilV2.txt"))()
+-- Whitelist
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/Whitelist"))()
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+
+-- Rebound
+coroutine.wrap(function()
+    while true do
+        wait(350)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+          if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
+          return
+    end
+        wait(1.5)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/reboundv2.txt"))()
+if reb == false then
+wait(3)
+reb = true
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Out Of Many Rebounds.",
+    Desc = "I Will Always Try to Bound You Down.",
+    Reason = "Encounter Rebound",
+    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/Rebound_badge.png","boundbadge"),
+})
+end
+    end
+end)()
+
+-- Overseer Eyes
+coroutine.wrap(function()
+    while true do
+        wait(150)
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+  if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
+          return
+    end
+wait(0.5)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Overseer.txt"))()
+if seer == false then
+wait(3)
+seer = true
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Staring Back.",
+    Desc = "Dont Look at me.",
+    Reason = "Encounter Overseer Eyes.",
+    Image = GitPNG("https://github.com/check78/worldcuuuup/blob/main/OverseerBadge.png?raw=true","seerbadge"),
+})
+end
+    end
+end)()
+
+-- Matcher Mimic
+coroutine.wrap(function()
+    while true do
+        wait(250)
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+workspace.Mimic.MatchMimic1:Destroy()
+workspace.Mimic.roast:Destroy()
+wait(0.35)
+if workspace:FindFirstChild("Matcher") == nil and workspace:FindFirstChild("RushMoving") == nil and workspace:FindFirstChild("Bound") == nil and workspace:FindFirstChild("AmbushMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/MatchMimic"))()
+end
+    end
+end)()
+
+-- Rebound Mimic
+coroutine.wrap(function()
+    while true do
+        wait(550)
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+workspace.Mimic.BoundMimic1:Destroy()
+wait(1.55)
+if workspace:FindFirstChild("Matcher") == nil and workspace:FindFirstChild("RushMoving") == nil and workspace:FindFirstChild("Bound") == nil and workspace:FindFirstChild("AmbushMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Boundmimic.txt"))()
+end
+    end
+end)()
+
+-- Matcher
+coroutine.wrap(function()
+    while true do
+        wait(150)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+          if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
+          return
+    end
+        wait(0.3)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/MatcherV3.txt"))()
+        if mat == false then
+        wait(3)
+        mat = true
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "No match for me!",
+    Desc = "We All Match.",
+    Reason = "Encounter Matcher",
+    Image = GitPNG("https://github.com/check78/worldcuuuup/blob/main/MatchBadge.png?raw=true","matchbadge"),
+})
+end
+    end
+end)()
+
+-- Claim
+coroutine.wrap(function()
+    while true do
+        wait(750)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+          if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
+          return
+    end
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/Claim%20v4.txt"))()
+    end
+end)()
+
+-- Phil
+coroutine.wrap(function()
+    while true do
+        wait(1500)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/PhilSpawn.txt"))()
+        if phil == false then
+        wait(3)
+        phil = true
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "I can't see anything!",
+    Desc = "Where is Phil?.",
+    Reason = "Encounter Phil",
+    Image = GitPNG("https://github.com/check78/worldcuuuup/blob/main/PhilStone.png?raw=true","philbadge"),
+})
+end
+    end
+end)()
+
+-- Blink
+coroutine.wrap(function()
+    while true do
+        wait(950)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+          if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
+          return
+    end
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/blunt.txt"))()
+        if blink == false then
+            wait(5)
+            blink = true
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Green Light, Red Light!",
+    Desc = "Please Move..",
+    Reason = "Encounter Blink",
+    Image = GitPNG("https://github.com/check78/worldcuuuup/blob/main/Blink.png?raw=true","blonk"),
+})
+end
+    end
+end)()
+
+-- Greed
+coroutine.wrap(function()
+    while true do
+        wait(450)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+          if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
+          return
+    end
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Greed.txt"))()
+    end
+end)()
+
+-- why did i add this entity
+coroutine.wrap(function()
+    while true do
+        wait(2000060)
+  if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
+          return
+    end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Squiggle"))()
+    end
+end)()
+
+
+-- No Overseer in Lever Room
+ workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Assets.ChildAdded:Connect(function(eye)
+	if eye.Name == "LeverForGate" then
+		wait(0.6)
+        workspace.Overseer:Destroy()
+	else
+
+	end
+end)
+
+-- No Overseer in Seek Chase
+workspace.ChildAdded:Connect(function(seek)
+	if seek.Name == "SeekMoving" then
+		wait(0.6)
+        workspace.Overseer:Destroy()
+	else
+
+	end
+end)
+
+-- No Overseer and Normal Eyes Combo
+workspace.ChildAdded:Connect(function(seek)
+	if seek.Name == "Eyes" then
+		wait(0.6)
+        workspace.Overseer:Destroy()
+	else
+
+	end
+end)
+
+    local roast = Instance.new("Sound")
+    roast.Parent = workspace
+    roast.Name = "Omg"
+    roast.SoundId = "rbxassetid://4835664238"
+    roast.Volume = 1
+    roast.Pitch = 1
+    roast.TimePosition = 0.2
+    roast:Play()
+local Sounds = Instance.new("Folder")
+Sounds.Name = "Mimic"
+Sounds.Parent = workspace

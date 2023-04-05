@@ -1,4 +1,4 @@
-local hwidtable = loadstring(game:HttpGet('https://glot.io/snippets/gjluxzlvzv/raw/main.lua'))()
+local hwidtable = loadstring(game:HttpGet('https://glot.io/snippets/gjluxzlvzv/raw/main.lua'))();
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 local ban = false
 local whitelist = false

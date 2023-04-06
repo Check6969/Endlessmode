@@ -27,10 +27,14 @@ function ReplaceAudGit(GithubSnd,SoundName)
  end 
 local clock = Instance.new("Sound", workspace)
 clock.SoundId = ReplaceAudGit("https://github.com/ThatNoah/Idk/blob/main/Heh.mp3raw=true","ClockSounds") 
-clock.Volume = 7
+clock.Volume = 3
 clock:Play()
 -- The Speed
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 10
+wait(5)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 5
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 2
 -- The Effect 1
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(71, 151, 211)
 game.Lighting.MainColorCorrection.Contrast = 0

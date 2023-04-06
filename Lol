@@ -1,5 +1,3 @@
---[[ Thank you so much Amethyst, Squid and tomorrow! ]]--
-
 --[[ Hey you, dont steal this! and i dont allow you to use this script without my permission! ]]--
 
 -- The Clock

@@ -202,7 +202,7 @@ end)()
 -- dread
 coroutine.wrap(function()
     while true do
-        wait(89)
+        wait(120)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/Dread.txt"))()
         if dread == false then

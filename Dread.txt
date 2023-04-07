@@ -1,9 +1,8 @@
---[[ Thank you so much Amethyst, Squid and tomorrow! ]]--
+--[[ Thank you so much Amethyst, Squid and tomorrow and Tjabiss! ]]--
 
 --[[ Hey you, dont steal this! and i dont allow you to use this script without my permission! ]]--
 
 -- The Clock
-wait(90)
 local saul = Instance.new("Part")
 saul.Parent = workspace.CurrentRooms
 saul.Rotation = Vector3.new(0, 0, 0)

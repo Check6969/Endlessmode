@@ -199,6 +199,28 @@ coroutine.wrap(function()
     end
 end)()
 
+-- dread
+coroutine.wrap(function()
+    while true do
+        wait(174)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/Dread.txt"))()
+        if dread == false then
+        wait(3)
+        dread = true
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "What is That Clock?!",
+    Desc = "Encounter Dread.",
+    Reason = " ",
+    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/New%20Project%20%5B3C0CB10%5D.png?raw=true","dreadbadge"),
+})
+end
+    end
+end)()
+
 -- why did i add this entity
 coroutine.wrap(function()
     while true do

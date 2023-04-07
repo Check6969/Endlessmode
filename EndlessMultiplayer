@@ -170,7 +170,7 @@ coroutine.wrap(function()
           if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
           return
     end
-        loadstring(game:HttpGet(""))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Blunt.txt"))()
         if blink == false then
             wait(5)
             blink = true

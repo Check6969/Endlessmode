@@ -1,0 +1,95 @@
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entityTable = Spawner.createEntity({
+    CustomName = "Dread", -- Custom name of your entity
+    Model = "rbxassetid://12329981842", -- Can be GitHub file or rbxassetid
+    Speed = 600, -- Percentage, 100 = default Rush speed
+    DelayTime = 5.1, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = true,
+    KillRange = 90,
+    BackwardsMovement = true,
+    BreakLights = false,
+    FlickerLights = {
+        true, -- Enabled/Disabled
+        6, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 1,
+        Max = 1,
+        WaitTime = 0.1,
+    },
+    CamShake = {
+        false, -- Enabled/Disabled
+        {0.1, 20, 0, 0}, -- Shake values (don't change if you don't know)
+        80, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        true, -- Enabled/Disabled
+        {
+            Image1 = "https://github.com/ThatNoah/Idk/blob/main/Silence.jpg.png?raw=true", -- Image1 url
+            Image2 = "https://github.com/ThatNoah/Idk/blob/main/Silence.jpg.png?raw=yrue", -- Image2 url
+            Shake = true,
+            Sound1 = {
+                4903742660, -- SoundId
+                { Volume = 0.1 }, -- Sound properties
+            },
+            Sound2 = {
+                5263560896, -- SoundId
+                { Volume = 1.0 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled/Disabled
+                Color3.fromRGB(255, 255, 255), -- Color
+            },
+            Tease = {
+                false, -- Enabled/Disabled
+                Min = 1,
+                Max = 1,
+            },
+        },
+    },
+    CustomDialog = {"You died to who you call...", "Dread.", "Okay... Use what you learned from ERROR"}, -- Custom death message
+firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to who you call Dread...", "It will manifest itself through The Clock.", "The time is your friend, but, dont play with it."}, "Blue")
+
+})
+
+
+-----  Debug -=- Advanced  -----
+entityTable.Debug.OnEntitySpawned = function()
+    print("Entity has spawned:", entityTable)
+end
+
+entityTable.Debug.OnEntityDespawned = function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 13
+    print("Entity has despawned:", entityTable)
+end
+
+entityTable.Debug.OnEntityStartMoving = function()
+    print("Entity started moving")
+wait(15)
+workspace.Dread:Destroy()
+end
+
+entityTable.Debug.OnEntityFinishedRebound = function()
+    print("Entity has finished rebound:", entityTable)
+end
+
+entityTable.Debug.OnEntityEnteredRoom = function(room)
+    print("Entity:", entityTable, "has entered room:", room)
+end
+
+entityTable.Debug.OnLookAtEntity = function()
+    print("Player has looked at entity:", entityTable)
+end
+
+entityTable.Debug.OnDeath = function()
+    warn("Player has died.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Potato032/Entt/main/Dreadfull"))()
+firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to who you call Dread...", "It will manifest itself through The Clock.", "The time is your friend, but, dont play with it."}, "Blue")
+end
+------------------------------------
+
+
+-- Run the created entity
+Spawner.runEntity(entityTable)

@@ -67,5 +67,5 @@ game.TweenService:Create(ImageLabel,TweenInfo.new(30),{ImageTransparency = -100}
       chest:Destroy()
       saul:Destroy()
       wait(0.05)
-loadstring(game:HttpGet("https://pastebin.com/raw/nJ78t5mw"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/Dread%20Entity"))()
 game.TweenService:Create(ImageLabel,TweenInfo.new(3),{ImageTransparency = 1}):Play()

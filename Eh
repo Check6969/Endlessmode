@@ -1,9 +1,9 @@
 local shut = game.Players.LocalPlayer.PlayerGui.MainUI.MainFrame.Intro
 local intro = shut:Clone()
 intro.Parent = game.Players.LocalPlayer.PlayerGui.MainUI
-intro.Name = "Ooo Your a boy kisser"
+intro.Name = "Creditspleasethankyou"
 intro.Visible = true
-intro.Text = "im sure you are"
+intro.Text = "The Old Hotel.."
 intro.TextTransparency = 0
 local underline = UDim2.new(1.1, 0, 0.015, 6)
 game.TweenService:Create(intro.Underline, TweenInfo.new(3), {Size = underline}):Play()

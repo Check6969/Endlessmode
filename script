@@ -20,6 +20,7 @@ firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent
 loadstring(game:HttpGet("https://pastebin.com/raw/iAhTGdBh"))()
 loadstring(game:HttpGet("https://pastebin.com/raw/6brG9uma"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/PhilV2.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/Whitelist"))()
 
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 

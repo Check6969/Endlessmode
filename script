@@ -232,6 +232,28 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main
     end
 end)()
 
+-- delt
+coroutine.wrap(function()
+    while true do
+        wait(196)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Delt.txt"))()
+        if delt == false then
+        wait(3)
+        dread = true
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Out Of Many Deltas?!",
+    Desc = "Encounter Delt.",
+    Reason = " ",
+    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/Delt-Badge%20%5B95795E2%5D.png?raw=true","deltbadge"),
+})
+end
+    end
+end)()
+
 
 -- No Overseer in Lever Room
  workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Assets.ChildAdded:Connect(function(eye)

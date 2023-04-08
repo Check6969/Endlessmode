@@ -15,11 +15,12 @@ local clam = false
 
 firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'You Executed the Script',true,2)
 wait(1)
-firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Imagine :<>',true,1)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Credits to Noah For Modifying',true,1)
 -- Custom Door Sounds
 loadstring(game:HttpGet("https://pastebin.com/raw/iAhTGdBh"))()
 loadstring(game:HttpGet("https://pastebin.com/raw/6brG9uma"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/PhilV2.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/Whitelist"))()
 
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 

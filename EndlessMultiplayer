@@ -13,6 +13,7 @@ local phil = false
 local blink = false
 local clam = false
 local dread = false
+local delt = false
 
 firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Loading 50%',true,2)
 wait(3)
@@ -99,7 +100,7 @@ game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 workspace.Mimic.BoundMimic1:Destroy()
 wait(1.55)
 if workspace:FindFirstChild("Matcher") == nil and workspace:FindFirstChild("RushMoving") == nil and workspace:FindFirstChild("Bound") == nil and workspace:FindFirstChild("AmbushMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/BoundMimic.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Boundmimic.txt"))()
 end
     end
 end)()
@@ -113,7 +114,7 @@ coroutine.wrap(function()
           return
     end
         wait(0.3)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/Matcher.txt"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/MatcherV3.txt"))()
         if mat == false then
         wait(3)
         mat = true
@@ -125,6 +126,28 @@ Achievements.Get({
     Desc = "Encounter Matcher.",
     Reason = " ",
     Image = GitPNG("https://github.com/check78/worldcuuuup/blob/main/MatchBadge.png?raw=true","matchbadge"),
+})
+end
+    end
+end)()
+
+-- Delt
+coroutine.wrap(function()
+    while true do
+        wait(196)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Delt.txt"))()
+        if delt == false then
+        wait(3)
+        dread = true
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Out Of Many Deltas?!",
+    Desc = "Encounter Delt.",
+    Reason = " ",
+    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/Delt-Badge%20%5B95795E2%5D.png?raw=true","deltbadge"),
 })
 end
     end

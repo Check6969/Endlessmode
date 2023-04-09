@@ -15,7 +15,7 @@ local clam = false
 local dread = false
 local delt = false
 
-firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Loading 50%',true,2)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Loaded Credits To $ Noah#5974 For modifying',true,2)
 wait(3)
 firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Thanks to hmm1x for whitelist',true,1)
 -- Custom Door Sounds

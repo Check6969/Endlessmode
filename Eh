@@ -1,7 +1,7 @@
 local shut = game.Players.LocalPlayer.PlayerGui.MainUI.MainFrame.Intro
 local intro = shut:Clone()
 intro.Parent = game.Players.LocalPlayer.PlayerGui.MainUI
-intro.Name = "CreditsPleaseThankYou"
+intro.Name = "TheOldHotel.."
 intro.Visible = true
 intro.Text = "The Old Hotel.."
 intro.TextTransparency = 0

@@ -1,11 +1,3 @@
---Credits to NovaNextruis, Muhammadgames, SquidR
---Screech, Jessica, TheEndIsNear, C87FM, Vynixu
---Creator of Endless Doors: Zavaled
---Your game might crash when you get an achievement
---seekeye.lua could lag your game, remove seekeye.lua to not lag during seek chase
---Victrola has a copyrighted song, remove VictrolaRecreation.txt to avoid copyright claims
---Join the Discord for Updates and Sneak peeks: https://discord.gg/mCaKjUeh7f
-
 if game:GetService("ReplicatedStorage"):FindFirstChild("Endless") then
 
     firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'You already executed this mod, Returning',true,1)
@@ -23,7 +15,6 @@ Test.Parent = game:GetService("ReplicatedStorage")
 Test = 1
 game.SoundService.AmbientReverb = "City"
 game.Lighting.Ambience_Seek2.Enabled = true
-loadstring(game:HttpGet(""))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/FlashLightV3Item"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/script"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/EndlessMultiplayer"))()

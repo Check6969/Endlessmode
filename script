@@ -13,12 +13,10 @@ local phil = false
 local blink = false
 local clam = false
 
-firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'You Executed the Script',true,3)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'You Executed the Script',true,2)
 wait(1)
-firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Credits to zavaled for Making Endless Doors',true,2)
-wait(3)
-firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Special Thanks To Noah For rework version V1.1',true,1)
--- Custom Door Sounds
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Credits to zavaled for Making Endless Doors And Special thanks to Noah',true,1)
+-- doors music
 loadstring(game:HttpGet("https://pastebin.com/raw/iAhTGdBh"))()
 loadstring(game:HttpGet("https://pastebin.com/raw/6brG9uma"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/PhilV2.txt"))()

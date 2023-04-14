@@ -37,7 +37,7 @@ roast.SoundId = "rbxassetid://4835664238"
 roast.Volume = 3
 roast.Pitch = 1
 roast.TimePosition = 0.2
-local Red = GetGitSound("https://github.com/check78/Sounds/blob/main/Track1Full.mp3?raw=true","Trackwahn")
+local Red = GetGitSound("https://github.com/ThatNoah/Idk/blob/main/Trackwahn.mp3?raw=true","Trackwahn")
 Red.Parent = b
 Red.Name = "Pink"
 Red.Volume = 3

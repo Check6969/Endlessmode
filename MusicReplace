@@ -7,7 +7,7 @@ function ReplaceAudGit(GithubSnd,SoundName)
 	return (getcustomasset or getsynasset)(SoundName..".mp3")
 end
 
-workspace.Ambience_Seek.SoundId = ReplaceAudGit("https://github.com/check78/worldcuuuup/blob/main/EndlessSeekChase.mp3?raw=true","EndlessSeekChase")
+workspace.Ambience_Seek.SoundId = ReplaceAudGit("https://github.com/ThatNoah/Idk/blob/main/EndlessSeekChase.mp3?raw=true","EndlessSeekChase")
 workspace.Ambience_Seek.Volume = 0.5
 
 workspace.Ambience_Figure.SoundId = ReplaceAudGit("https://github.com/check78/worldcuuuup/blob/main/Unhinged3.mp3?raw=true","Unhinged3")

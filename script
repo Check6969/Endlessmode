@@ -13,14 +13,15 @@ local phil = false
 local blink = false
 local clam = false
 
-firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'You Executed the Script',true,2)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'You Executed the Script',true,3)
 wait(1)
-firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Added WhiteList',true,1)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Credits to zavaled for Making Endless Doors',true,2)
+wait(3)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Special Thanks To Noah For rework version V1.1',true,1)
 -- Custom Door Sounds
 loadstring(game:HttpGet("https://pastebin.com/raw/iAhTGdBh"))()
 loadstring(game:HttpGet("https://pastebin.com/raw/6brG9uma"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/PhilV2.txt"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/Whitelist"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/PhilV2.txt"))()
 
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 
@@ -42,9 +43,9 @@ local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 -- Creates and displays your custom achievement
 Achievements.Get({
     Title = "I Always Come Back.",
-    Desc = "Back for more..",
-    Reason = "Encounter Rebound ",
-    Image = GitPNG("https://github.com/check78/worldcuuuup/blob/main/ReboundBadgeV2.png?raw=true","boundbadge"),
+    Desc = "Encounter Rebound.",
+    Reason = " ",
+    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/Rebound_badge.png?raw=true","boundbadge"),
 })
 end
     end
@@ -68,9 +69,9 @@ local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 -- Creates and displays your custom achievement
 Achievements.Get({
     Title = "Staring Back.",
-    Desc = "Look at me..",
-    Reason = "Encounter Overseer Eyes",
-    Image = GitPNG("https://github.com/check78/worldcuuuup/blob/main/OverseerBadge.png?raw=true","seerbadge"),
+    Desc = "Encounter Overseer Eyes.",
+    Reason = " ",
+    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/seerbadge.png?raw=true","seerbadge"),
 })
 end
     end
@@ -85,7 +86,7 @@ workspace.Mimic.MatchMimic1:Destroy()
 workspace.Mimic.roast:Destroy()
 wait(0.35)
 if workspace:FindFirstChild("Matcher") == nil and workspace:FindFirstChild("RushMoving") == nil and workspace:FindFirstChild("Bound") == nil and workspace:FindFirstChild("AmbushMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/MatchMimic.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/MatchMimic"))()
 end
     end
 end)()
@@ -98,7 +99,7 @@ game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 workspace.Mimic.BoundMimic1:Destroy()
 wait(1.55)
 if workspace:FindFirstChild("Matcher") == nil and workspace:FindFirstChild("RushMoving") == nil and workspace:FindFirstChild("Bound") == nil and workspace:FindFirstChild("AmbushMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/BoundMimic.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Boundmimic.txt"))()
 end
     end
 end)()
@@ -123,7 +124,7 @@ Achievements.Get({
     Title = "No match for me!",
     Desc = "Encounter Matcher.",
     Reason = " ",
-    Image = GitPNG("https://github.com/check78/worldcuuuup/blob/main/MatchBadge.png?raw=true","matchbadge"),
+    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/matchbadge.png?raw=true","matchbadge"),
 })
 end
     end
@@ -137,7 +138,7 @@ coroutine.wrap(function()
           if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
           return
     end
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/Claim%20v4.txt"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/ClaimV2.txt"))()
     end
 end)()
 
@@ -146,7 +147,7 @@ coroutine.wrap(function()
     while true do
         wait(math.random(5,3500))
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/PhilSpawn.txt"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/PhilSpawn.txt"))()
         if phil == false then
         wait(3)
         phil = true
@@ -157,7 +158,7 @@ Achievements.Get({
     Title = "I can't see anything!",
     Desc = "Encounter Phil.",
     Reason = " ",
-    Image = GitPNG("https://github.com/check78/worldcuuuup/blob/main/PhilStone.png?raw=true","philbadge"),
+    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/philbadge.png?raw=true","philbadge"),
 })
 end
     end
@@ -171,7 +172,7 @@ coroutine.wrap(function()
           if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
           return
     end
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/blunt.txt"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Blunt.txt"))()
         if blink == false then
             wait(5)
             blink = true
@@ -180,9 +181,9 @@ local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 -- Creates and displays your custom achievement
 Achievements.Get({
     Title = "Green Light, Red Light!",
-    Desc = "Move.",
-    Reason = "Encounter Blink ",
-    Image = GitPNG("https://github.com/check78/worldcuuuup/blob/main/Blink.png?raw=true","blonk"),
+    Desc = "Encounter Blink.",
+    Reason = " ",
+    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/blonk.png?raw=true","blonk"),
 })
 end
     end
@@ -196,65 +197,9 @@ coroutine.wrap(function()
           if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
           return
     end
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/Greed.txt"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Greed"))()
     end
 end)()
-
--- dread
-coroutine.wrap(function()
-    while true do
-        wait(120)
-        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Idk/main/Dread.txt"))()
-        if dread == false then
-        wait(3)
-        dread = true
-local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
-
--- Creates and displays your custom achievement
-Achievements.Get({
-    Title = "What is That Clock?!",
-    Desc = "It Looks Like An Old Grandpas Clock?!?!.",
-    Reason = "Encounter Dread",
-    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/New%20Project%20%5B3C0CB10%5D.png?raw=true","dreadbadge"),
-})
-end
-    end
-end)()
-
--- why did i add this entity
-coroutine.wrap(function()
-    while true do
-        wait(math.random(1,2000060))
-  if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
-          return
-    end
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/squiggle.txt"))()
-    end
-end)()
-
--- delt
-coroutine.wrap(function()
-    while true do
-        wait(196)
-        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Delt.txt"))()
-        if delt == false then
-        wait(3)
-        dread = true
-local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
-
--- Creates and displays your custom achievement
-Achievements.Get({
-    Title = "Out Of Many Deltas?!",
-    Desc = "Encounter Delt.",
-    Reason = " ",
-    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/Delt-Badge%20%5B95795E2%5D.png?raw=true","deltbadge"),
-})
-end
-    end
-end)()
-
 
 -- No Overseer in Lever Room
  workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Assets.ChildAdded:Connect(function(eye)

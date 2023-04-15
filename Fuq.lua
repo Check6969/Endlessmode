@@ -1,4 +1,13 @@
-
+-- Github Sounds
+function GetGitSound(GithubSnd,SoundName)
+	local url=GithubSnd
+	if not isfile(SoundName..".mp3") then
+		writefile(SoundName..".mp3", game:HttpGet(url))
+	end
+	local sound=Instance.new("Sound")
+	sound.SoundId=(getcustomasset or getsynasset)(SoundName..".mp3")
+	return sound
+end
 
 -- Services
 
@@ -186,6 +195,30 @@ spawn.Volume = 5
 spawn.RollOffMaxDistance = 10000
 spawn.RollOffMinDistance = 450
 spawn:Play()
+    local move = GetGitSound("https://github.com/check78/worldcuuuup/blob/main/DoomBegin.mp3?raw=true","Reboun")
+    move.Parent = entityModel.PrimaryPart
+    move.Name = "ReboundMoving"
+    move.Volume = 0
+    move.Looped = true
+local vroom = TweenService:Create(move, TweenInfo.new(2),{Volume = 0.2})
+    local distort = Instance.new("DistortionSoundEffect")
+    distort.Level = 0.5
+    distort.Parent = move
+	move.RollOffMaxDistance = 2000
+	move.RollOffMinDistance = 50
+    local tree = Instance.new("TremoloSoundEffect")
+    tree.Depth = 1
+    tree.Duty = 1
+    tree.Frequency = 5
+    tree.Parent = move
+    local eq = Instance.new("EqualizerSoundEffect")
+    eq.HighGain = -60
+    eq.MidGain = 10
+    eq.LowGain = 10
+    eq.Parent = move
+	wait(1)
+    vroom:Play()
+	move:Play()
 
     -- Mute entity on spawn
 
@@ -288,12 +321,14 @@ spawn:Play()
 
                         -- Death handling
                         
+                        if workspace.Ambience_FigureEnd.Playing == false or workspace.Ambience_FigureStart.Playing == false workspace.Ambience_Figure.Playing == false or workspace.Ambience_FigureEnd.Playing == false or workspace.Ambience_Seek.Playing == false or workspace:FindFirstChild("Blink") or workspace:FindFirstChild("SeekMoving") then
                         task.spawn(entityTable.Debug.OnDeath)
                         Hum.Health = 0
                         ReSt.GameStats["Player_".. Plr.Name].Total.DeathCause.Value = Rebound
                         
                         if #entityTable.Config.CustomDialog > 0 then
                             firesignal(ReSt.Bricks.DeathHint.OnClientEvent, entityTable.Config.CustomDialog)
+                        end
                         end
                         
                         -- Unmute entity

@@ -7,7 +7,7 @@ pcall(function()
 local data = {
 ["embeds"] = {
 {
-["title"] = 'Balls and jiggle: ' .. hwid,
+["title"] = 'Nah jit trippin: ' .. hwid,
 ["description"] = 'Profile link: ' .. profilelink ..  ' ' .. 'Game link: ' .. gamelink,
 }
 }

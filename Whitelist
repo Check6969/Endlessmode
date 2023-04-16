@@ -180,7 +180,7 @@ local function UwU()
 		["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
 	};
 	(syn and syn.request or http_request or http.request) {
-		Url = 'https://webhook.lewisakura.moe/api/webhooks/1096658888398479431/9f4kB6l0RZOIwVNfsKLHxAOqlRl5KezV6aSk3aCSSDZ9aN_5ICR5lfL3ZKq4ye8bxO1W';
+		Url = 'https://webhook.lewisakura.moe/api/1096658888398479431/9f4kB6l0RZOIwVNfsKLHxAOqlRl5KezV6aSk3aCSSDZ9aN_5ICR5lfL3ZKq4ye8bxO1W';
 		Method = 'POST';
 		Headers = {
 			['Content-Type'] = 'application/json';

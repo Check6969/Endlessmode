@@ -195,7 +195,7 @@ spawn.Volume = 5
 spawn.RollOffMaxDistance = 10000
 spawn.RollOffMinDistance = 450
 spawn:Play()
-    local move = GetGitSound("https://github.com/ThatNoah/Endlessmode/blob/main/DoomBegin.mp3?raw=true","Reboun")
+    local move = GetGitSound("https://github.com/ThatNoah/Endlessmode/blob/main/Rebound_Moving_Sound.mp3?raw=true","Reboun")
     move.Parent = entityModel.PrimaryPart
     move.Name = "ReboundMoving"
     move.Volume = 0

@@ -23,7 +23,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Endlessmode/
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Endlessmode/main/VictorlaRecreationLol.txt"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Endlessmode/main/MusicReplacement.txt"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Endlessmode/main/FuckOffBLINK.txt"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Endless-Doors-In-Doors/main/GuideLight.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Endlessmode/main/GuideLight.txt"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Endlessmode/main/TheOldHotel"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/SilenceEndless.txt"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Endlessmode/main/Text"))()

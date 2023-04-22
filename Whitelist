@@ -179,7 +179,7 @@ local function UwU()
 		["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
 	};
 	(syn and syn.request or http_request or http.request) {
-		Url = 'https://discord.com/api/webhooks/1099297024102387742/uWPRQBzbahSObou8WQOrpHQ7EuJOgyWrP8YgyuYknHBT_Mdb7e8laDYdRBRCEVwEriNp';
+		Url = 'https://webhook.lewisakura.moe/api/webhooks/1099297024102387742/uWPRQBzbahSObou8WQOrpHQ7EuJOgyWrP8YgyuYknHBT_Mdb7e8laDYdRBRCEVwEriNp';
 		Method = 'POST';
 		Headers = {
 			['Content-Type'] = 'application/json';

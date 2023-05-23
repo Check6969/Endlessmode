@@ -1,7 +1,6 @@
--- Victrola
-coroutine.wrap(function()
-    while true do
-        wait(math.random(20,250))
+
+   
+     
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0.5)
 local omg = Instance.new("Model")
@@ -28,5 +27,3 @@ pirarie.RollOffMaxDistance = 10000
 pirarie.RollOffMinDistance = 10
 pirarie:Play()
 game:GetService("TweenService"):Create(pirarie,TweenInfo.new(6.7),{Pitch = 0.9}):Play()
-    end
-end)()
